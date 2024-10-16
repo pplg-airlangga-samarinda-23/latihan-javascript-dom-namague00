@@ -5,13 +5,21 @@
 </head>
 <body>
     <p id="teks">Rekayasa Perangkat Lunak</p>
-    <button id="tombol">Tombol</button>
+    <button id="tombol">edit</button>
+    <button id="tombol2">kembali</button>
 
     <script>
         // tambahkan skrip javascript di sini
         // untuk mengubah ukuran dan warna dari teks
         // "Rekayasa Perangkat Lunak"
-
+        document.getElementById("tombol").addEventListener("click",function() {
+            document.getElementById("teks").style.color = "red";
+            document.getElementById("teks").style.fontSize = "24px";
+        })
+        document.getElementById("tombol2").addEventListener("click",function () {
+            document.getElementById("teks").style.color = "black";
+            document.getElementById("teks").style.fontSize ="16px";
+        })
         
     </script>
 </body>
