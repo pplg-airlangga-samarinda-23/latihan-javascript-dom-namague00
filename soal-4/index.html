@@ -29,6 +29,13 @@
         // Nilai volume akan muncul pada isian Volume setelah tombol
         // hitung ditekan.
         //saya menyerah
+        let button =  document.getElementById("submit").addEventListener("click",function () {
+            event.preventDefault();
+            const a = parseFloat(document.getElementById('diameter').value);
+            const b = a / 2;
+            const hasil = (4/3)*3.14*(b*b*b);
+            document.getElementById('volume').value = hasil.toFixed(2);
+        })
     </script>
 </body>
 
